@@ -1,0 +1,28 @@
+{
+  "extends": "@oclif/tslint",
+  "rules": {
+    "object-curly-spacing": false,
+    "semicolon": [
+      true,
+      "always",
+      "strict-bound-class-methods"
+    ],
+    "ordered-imports": false,
+    "no-console": {
+      "severity": "warning"
+    },
+    "no-unused": false,
+    "no-shadowed-variable": true,
+    "ter-indent": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "whitespace": [
+      true,
+      "check-module"
+    ],
+    "arrow-parens": [false],
+    "no-trailing-whitespace": false
+  }
+}
