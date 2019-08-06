@@ -1,5 +1,6 @@
 import { Command, flags as Flags } from '@oclif/command';
 import { Repo } from '../repo';
+import { trim } from 'lodash';
 
 export default class CleanLocalBranches extends Command {
   static description = 'delete local branches';
@@ -14,6 +15,11 @@ export default class CleanLocalBranches extends Command {
     const deletedBranches: string[] = await repo.deleteLocalBrances();
 
     this.log('Success!');
-    this.log('Deleted branches: \n\n', deletedBranches.join('\n'));
+    this.log(
+      'Deleted branches: \n\n',
+      deletedBranches
+        .map((branch: string): string => `- ${trim(branch)}`)
+        .join('\n'),
+    );
   }
 }
