@@ -28,45 +28,22 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`git-utils clean-local-branches [FILE]`](#git-utils-clean-local-branches-file)
-* [`git-utils hello [FILE]`](#git-utils-hello-file)
+* [`git-utils clean-local-branches`](#git-utils-clean-local-branches)
 * [`git-utils help [COMMAND]`](#git-utils-help-command)
 
-## `git-utils clean-local-branches [FILE]`
+## `git-utils clean-local-branches`
 
-describe the command here
+delete local branches
 
 ```
 USAGE
-  $ git-utils clean-local-branches [FILE]
+  $ git-utils clean-local-branches
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/clean-local-branches.ts](https://github.com/other/git-utils/blob/v0.0.0/src/commands/clean-local-branches.ts)_
-
-## `git-utils hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ git-utils hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ git-utils hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/other/git-utils/blob/v0.0.0/src/commands/hello.ts)_
 
 ## `git-utils help [COMMAND]`
 
